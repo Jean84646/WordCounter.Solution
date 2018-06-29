@@ -1,0 +1,15 @@
+C:\Users\jean8\OneDrive\Desktop\WordCounter.Solution\wordcounter.tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\jean8\OneDrive\Desktop\WordCounter.Solution\wordcounter.tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\jean8\OneDrive\Desktop\WordCounter.Solution\wordcounter.tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\jean8\OneDrive\Desktop\WordCounter.Solution\wordcounter.tests\bin\Debug\netcoreapp1.1\WordCounterTests.deps.json
+C:\Users\jean8\OneDrive\Desktop\WordCounter.Solution\wordcounter.tests\bin\Debug\netcoreapp1.1\WordCounterTests.runtimeconfig.json
+C:\Users\jean8\OneDrive\Desktop\WordCounter.Solution\wordcounter.tests\bin\Debug\netcoreapp1.1\WordCounterTests.runtimeconfig.dev.json
+C:\Users\jean8\OneDrive\Desktop\WordCounter.Solution\wordcounter.tests\bin\Debug\netcoreapp1.1\WordCounterTests.dll
+C:\Users\jean8\OneDrive\Desktop\WordCounter.Solution\wordcounter.tests\bin\Debug\netcoreapp1.1\WordCounterTests.pdb
+C:\Users\jean8\OneDrive\Desktop\WordCounter.Solution\wordcounter.tests\bin\Debug\netcoreapp1.1\WordCounter.dll
+C:\Users\jean8\OneDrive\Desktop\WordCounter.Solution\wordcounter.tests\bin\Debug\netcoreapp1.1\WordCounter.pdb
+C:\Users\jean8\OneDrive\Desktop\WordCounter.Solution\wordcounter.tests\obj\Debug\netcoreapp1.1\WordCounterTests.csproj.CoreCompileInputs.cache
+C:\Users\jean8\OneDrive\Desktop\WordCounter.Solution\wordcounter.tests\obj\Debug\netcoreapp1.1\WordCounterTests.AssemblyInfoInputs.cache
+C:\Users\jean8\OneDrive\Desktop\WordCounter.Solution\wordcounter.tests\obj\Debug\netcoreapp1.1\WordCounterTests.AssemblyInfo.cs
+C:\Users\jean8\OneDrive\Desktop\WordCounter.Solution\wordcounter.tests\obj\Debug\netcoreapp1.1\WordCounterTests.dll
+C:\Users\jean8\OneDrive\Desktop\WordCounter.Solution\wordcounter.tests\obj\Debug\netcoreapp1.1\WordCounterTests.pdb
