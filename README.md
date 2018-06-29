@@ -30,11 +30,18 @@ jean84646@gmail.com
 * Delimiters are space ( ), commas (,), and period (.).
 * The application will display the counter after processing the sentence.
 
-# Examples
+## Examples
+* Check sentence: Let's play.
+* Check word: game
+* Counter = 0
 
-* Game: Let's play. Counter = 0.
-* Game: Let's play a game. Counter = 1.
-* Game: Let's play a GAME called, monopoly game. Counter = 2.
+* Check sentence: Let's play a game.
+* Check word: GAME
+* Counter = 1
+
+* Check sentence: Let's play a GAME called, monopoly game.
+* Check word: GaMe
+* Counter = 2
 
 ### Legal
 

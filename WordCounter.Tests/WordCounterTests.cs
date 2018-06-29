@@ -10,7 +10,7 @@ namespace WordCounter.Tests
     public void WordCount_ReturnZero()
     {
       //Arrange
-      string word = "Game";
+      string word = "game";
       string inputSentence = "Let's play.";
       RepeatCounter newWord = new RepeatCounter(word);
       int result = 0;
@@ -23,7 +23,7 @@ namespace WordCounter.Tests
     public void WordCount_ReturnOne()
     {
       //Arrange
-      string word = "Game";
+      string word = "GAME";
       string inputSentence = "Let's play a game.";
       RepeatCounter newWord = new RepeatCounter(word);
       int result = 1;
@@ -36,7 +36,7 @@ namespace WordCounter.Tests
     public void WordCount_ReturnTwo()
     {
       //Arrange
-      string word = "Game";
+      string word = "GaMe";
       string inputSentence = "Let's play a GAME, called monopoly game.";
       RepeatCounter newWord = new RepeatCounter(word);
       int result = 2;
