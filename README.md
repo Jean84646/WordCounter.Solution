@@ -23,17 +23,18 @@ jean84646@gmail.com
 
 ## Spec
 
-* User will input a sentence.
-* User will input the word to be check.
+* User will input a sentence  (lower or upper case).
+* User will input the word to be check (lower or upper case).
 * The application will count how many times the word appears in the sentence.
 * For each time the word appears and counter will add 1.
+* Delimiters are space ( ), commas (,), and period (.).
 * The application will display the counter after processing the sentence.
 
 # Examples
 
 * Game: Let's play. Counter = 0.
 * Game: Let's play a game. Counter = 1.
-* Game: Let's play a game called monopoly game. Counter = 2.
+* Game: Let's play a GAME called, monopoly game. Counter = 2.
 
 ### Legal
 

@@ -8516,11 +8516,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jean8\\OneDrive\\Desktop\\WordCounter.Solution\\WordCounter.Tests\\WordCounterTests.csproj",
+      "projectUniqueName": "C:\\Users\\jean8\\OneDrive\\Desktop\\WordCounter.Solution\\wordcounter.tests\\WordCounterTests.csproj",
       "projectName": "WordCounterTests",
-      "projectPath": "C:\\Users\\jean8\\OneDrive\\Desktop\\WordCounter.Solution\\WordCounter.Tests\\WordCounterTests.csproj",
+      "projectPath": "C:\\Users\\jean8\\OneDrive\\Desktop\\WordCounter.Solution\\wordcounter.tests\\WordCounterTests.csproj",
       "packagesPath": "C:\\Users\\jean8\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jean8\\OneDrive\\Desktop\\WordCounter.Solution\\WordCounter.Tests\\obj\\",
+      "outputPath": "C:\\Users\\jean8\\OneDrive\\Desktop\\WordCounter.Solution\\wordcounter.tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jean8\\AppData\\Roaming\\NuGet\\NuGet.Config",
