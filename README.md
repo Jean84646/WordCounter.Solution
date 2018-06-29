@@ -33,15 +33,15 @@ jean84646@gmail.com
 ## Examples
 * Check sentence: Let's play.
 * Check word: game
-* Counter = 0
+* Counter = 0  
 
 * Check sentence: Let's play a game.
 * Check word: GAME
-* Counter = 1
+* Counter = 1  
 
 * Check sentence: Let's play a GAME called, monopoly game.
 * Check word: GaMe
-* Counter = 2
+* Counter = 2  
 
 ### Legal
 
