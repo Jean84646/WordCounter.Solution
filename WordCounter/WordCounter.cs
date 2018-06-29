@@ -35,7 +35,13 @@ namespace WordCounter
       string inputWord = Console.ReadLine();
       RepeatCounter newWord = new RepeatCounter(inputWord);
       int result = newWord.WordCount(inputSentence);
-      Console.WriteLine(result);
+      Console.WriteLine("Count = " + result);
+      Console.WriteLine("Would you like to check another sentence? (Y/N)");
+      string replay = Console.ReadLine();
+      if(replay == "Y" || replay == "y")
+      {
+        Main();
+      }
     }
   }
 }
