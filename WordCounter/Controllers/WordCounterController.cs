@@ -7,41 +7,26 @@ namespace WordCounter.Controllers
   public class WordCounterController : Controller
   {
     [HttpGet("/WordCounter")]
-    public ActionResult WordCounter()
+    public ActionResult Index()
     {
-      return View();
+      List<RepeatCounter> newMatches = RepeatCounter.GetAll();
+      return View(newMatches);
     }
     [HttpGet("/WordCounter/new")]
     public ActionResult CreateForm()
     {
       return View();
     }
-
-    [HttpPost("/WordCounter")]
-    public ActionResult Create()
+    [HttpPost("/Index")]
+    public ActionResult Create(string newWord, string newSentence)
     {
-      RepeatCounter newWord = new RepeatCounter(Request.Form["newWord"],Request.Form["newSentence"]);
-
-      public int WordCount(string inputSentence)
-      {
-        int count = 0;
-        string[] arrayWords = inputSentence.Split(' ', ',', '.');
-        for (int i = 0; i < arrayWords.Length; i++)
-        {
-          if (wordToBeCount.ToUpper().Equals(arrayWords[i].ToUpper()))
-          {
-            count += 1;
-          }
-        }
-        return count;
-      }
-      return View("WordCounter", count);
+      RepeatCounter newCheck = new RepeatCounter(newWord, newSentence);
+      return RedirectToAction("Index");
     }
-
     [HttpPost("/WordCounter/delete")]
     public ActionResult DeleteAll()
     {
-      WordCounterObject.ClearAll();
+      RepeatCounter.ClearAll();
       return View();
     }
   }
