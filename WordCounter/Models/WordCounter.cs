@@ -21,21 +21,6 @@ namespace WordCounter.Models
     {
       return sentence;
     }
-
-    public int WordCount(string inputSentence)
-    {
-      int count = 0;
-      string[] arrayWords = inputSentence.Split(' ', ',', '.');
-      for (int i = 0; i < arrayWords.Length; i++)
-      {
-        if (wordToBeCount.ToUpper().Equals(arrayWords[i].ToUpper()))
-        {
-          count += 1;
-        }
-      }
-      return count;
-    }
-    
     public static void ClearAll()
     {
       newPlaces.Clear();
