@@ -27,7 +27,7 @@ namespace WordCounter.Controllers
     public ActionResult DeleteAll()
     {
       RepeatCounter.ClearAll();
-      return View();
+      return RedirectToAction("CreateForm");
     }
   }
 }
