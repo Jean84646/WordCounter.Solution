@@ -3,7 +3,7 @@
 <ul>
   @foreach(var word in Model)
   {
-    <li><a href="/WordCounter/@word.GetId()">@word.GetWord() appears @word.GetWordCount() times in the sentence: @word.GetSentence()</a></li>
+    <li><a href="/WordCounter/@word.GetId()">"@word.GetWord()" appears @word.GetWordCount() times in: @word.GetSentence()</a></li>
   }
 </ul>
 

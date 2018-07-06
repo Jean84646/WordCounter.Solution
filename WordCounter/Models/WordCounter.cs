@@ -6,55 +6,60 @@ namespace WordCounter.Models
 {
   public class RepeatCounter
   {
-    private string wordToBeCount;
-    private string sentenceToBeCheck;
-    private int id;
+    private string WordToBeCount;
+    private string SentenceToBeCheck;
+    private int Count = 0;
+    private int Id;
     private static int lastId = 0;
-    private static List<RepeatCounter> matches = new List<RepeatCounter> {};
+    private static List<RepeatCounter> Matches = new List<RepeatCounter> {};
 
     public RepeatCounter(string word, string sentence)
     {
-      wordToBeCount = word;
-      sentenceToBeCheck = sentence;
-      matches.Add(this);
-      id = ++lastId;
+      WordToBeCount = word;
+      SentenceToBeCheck = sentence;
+      Matches.Add(this);
+      Id = ++lastId;
+      this.WordCount();
     }
     public string GetWord()
     {
-      return wordToBeCount;
+      return WordToBeCount;
     }
     public string GetSentence()
     {
-      return sentenceToBeCheck;
+      return SentenceToBeCheck;
     }
     public int GetId()
     {
-      return id;
+      return Id;
     }
     public static RepeatCounter Find(int searchId)
     {
-      return matches[searchId - 1];
+      return Matches[searchId - 1];
     }
     public static List<RepeatCounter> GetAll()
     {
-      return matches;
+      return Matches;
     }
     public static void ClearAll()
     {
-      matches.Clear();
+      Matches.Clear();
     }
-    public int WordCount(string inputSentence)
+    public int WordCount()
     {
-      int count = 0;
-      string[] arrayWords = inputSentence.Split(' ', ',', '.');
+      string[] arrayWords = SentenceToBeCheck.Split(' ', ',', '.');
       for (int i = 0; i < arrayWords.Length; i++)
       {
-        if (wordToBeCount.ToUpper().Equals(arrayWords[i].ToUpper()))
+        if (WordToBeCount.ToUpper().Equals(arrayWords[i].ToUpper()))
         {
-          count += 1;
+          Count += 1;
         }
       }
-      return count;
+      return Count;
+    }
+    public int GetWordCount()
+    {
+      return Count;
     }
   }
 }
