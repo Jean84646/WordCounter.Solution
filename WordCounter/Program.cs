@@ -1,7 +1,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace WordCount
+namespace WordCounter
 {
   public class Program
  {
