@@ -11,7 +11,6 @@ namespace WordCounter.Models
     private int id;
     private static int lastId = 0;
     private static List<RepeatCounter> matches = new List<RepeatCounter> {};
-    private int count;
 
     public RepeatCounter(string word, string sentence)
     {
@@ -19,7 +18,6 @@ namespace WordCounter.Models
       sentenceToBeCheck = sentence;
       matches.Add(this);
       id = ++lastId;
-      count = 0;
     }
     public string GetWord()
     {
@@ -41,6 +39,10 @@ namespace WordCounter.Models
     {
       return matches;
     }
+    public static void ClearAll()
+    {
+      matches.Clear();
+    }
     public int WordCount(string inputSentence)
     {
       int count = 0;
@@ -53,14 +55,6 @@ namespace WordCounter.Models
         }
       }
       return count;
-    }
-    public int GetWordCount()
-    {
-      return count;
-    }
-    public static void ClearAll()
-    {
-      matches.Clear();
     }
   }
 }
