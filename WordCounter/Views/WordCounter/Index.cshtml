@@ -1,13 +1,71 @@
-<h1>Word Counter</h1>
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <title>Word Conter</title>
+      <style>
+      body {
+      background-color: #FCDFA6;
+      color: #6B8E83;
+      font-size: 2em;
+      text-align: center;
+      font-family: monospace;
+      }
 
-<ul>
-  @foreach(var word in Model)
-  {
-    <li><a href="/WordCounter/@word.GetId()">"@word.GetWord()" appears @word.GetWordCount() times in: @word.GetSentence()</a></li>
-  }
-</ul>
+      h1 {
+      font-size: 5em;
+      font-weight: bold;
+      margin: 5%;
+      }
 
-<a href="/WordCounter/new">Click here to check</a>
-<form action="/WordCounter/delete" method="post">
-  <button type="submit" name="button">Clear All</button>
-</form>
+      div {
+        text-align: left;
+      }
+
+      .new {
+        margin-top: 5%;
+        text-align: center;
+      }
+
+      a {
+      font-size: 1.5em;
+      }
+
+      a:hover {
+        background-color: #F4B886;
+        text-decoration: none;
+        padding: 1%;
+      }
+
+      button {
+        float: right;
+      }
+
+      </style>
+    </head>
+    <body class="container">
+      <h1>Word Counter</h1>
+
+      @foreach(var word in Model)
+      {
+        <div class="row">
+          <div class="col-md-2">
+            <p>Word: @word.GetWord()</p>
+          </div>
+          <div class="col-md-2">
+            <p>Count: @word.GetWordCount()</p>
+          </div>
+          <div class="col-md-8">
+            <p>Sentence: @word.GetSentence()</p>
+          </div>
+        </div>
+      }
+      <div class="new">
+        <a href="/WordCounter/new">Click here to check another word</a>
+      </div>
+      <form action="/WordCounter/delete" method="post">
+        <button type="submit" name="button">Clear All</button>
+      </form>
+    </body>
+  </html>
