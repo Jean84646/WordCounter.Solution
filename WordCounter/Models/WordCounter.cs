@@ -17,9 +17,17 @@ namespace WordCounter.Models
     {
       return word;
     }
+    public void SetWord(string newWord)
+    {
+      word = newWord;
+    }
     public string GetSentence()
     {
       return sentence;
+    }
+    public void SetSentence(int newSentence)
+    {
+      sentence = newSentence;
     }
     public static void ClearAll()
     {

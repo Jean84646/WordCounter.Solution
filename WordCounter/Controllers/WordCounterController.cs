@@ -44,6 +44,5 @@ namespace WordCounter.Controllers
       WordCounterObject.ClearAll();
       return View();
     }
-
   }
 }
