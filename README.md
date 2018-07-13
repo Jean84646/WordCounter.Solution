@@ -31,7 +31,7 @@ jean84646@gmail.com
 * The application will display the counter after processing the sentence.
 
 ## Examples
-* Check sentence: Let's play.
+* Check sentence: Let's play
 * Check word: game
 * Counter = 0  
 
